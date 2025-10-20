@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Admin — Demo AI</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="admin">
+    <header>
+      <div class="brand">Admin — Demo AI</div>
+      <div><button id="logout">Выйти</button></div>
+    </header>
+
+    <aside id="conversations-list"></aside>
+
+    <main id="admin-chat">
+      <div id="admin-messages"></div>
+      <div id="admin-typing" class="hidden">Вы печатаете<span class="dots">...</span></div>
+
+      <form id="reply-form">
+        <textarea id="reply-text" placeholder="Ответить..."></textarea>
+        <button id="reply-send">Отправить как ИИ</button>
+      </form>
+    </main>
+  </div>
+
+<script src="/js/config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>
