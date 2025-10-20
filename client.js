@@ -66,6 +66,6 @@ function listenForResponses(docRef){
 
 firebase.initializeApp(window.firebaseConfig);
 const auth = firebase.auth();
-const db = firebase.firestore();
+
 
 
